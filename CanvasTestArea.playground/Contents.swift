@@ -24,16 +24,53 @@ import PlaygroundSupport
 let canvas = Canvas(width: 500, height: 500)
 
 // Colour in blue rectangle
-canvas.fillColor = Color.blue
+canvas.fillColor = Color.init(hue: 200, saturation: 50, brightness: 100, alpha: 100)
 canvas.drawRectangle(centreX: 0, centreY: 0, width: 1000, height: 1200)
+
+// Sun rays
+canvas.lineColor = Color.yellow
+canvas.defaultLineWidth=5
+canvas.drawLine(fromX: 0, fromY: 500, toX: 100, toY: 0)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 300, toY: 0)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 600, toY: 0)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 600, toY: 400)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 600, toY: 200)
+// Sun rays in orange
+canvas.lineColor = Color.orange
+canvas.drawLine(fromX: 0, fromY: 500, toX: 0, toY: 0)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 200, toY: 0)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 450, toY: 0)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 600, toY: 500)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 600, toY: 300)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 600, toY: 100)
 canvas.fillColor = Color.yellow
 canvas.borderColor = Color.yellow
 canvas.drawEllipse(centreX: 0, centreY: 500, width: 140, height: 140, borderWidth: 4)
 // Make the cloud
 canvas.fillColor = Color.white
+canvas.borderColor = Color.white
 canvas.drawEllipse(centreX: 460, centreY: 490, width: 100, height: 100, borderWidth: 0)
 canvas.drawEllipse(centreX: 470, centreY: 430, width: 100, height: 100, borderWidth: 0)
-
+// draw rainbow (red)
+canvas.defaultBorderWidth = 30
+canvas.borderColor = Color.red
+canvas.fillColor = Color.init(hue: 0, saturation: 0, brightness: 0, alpha: 0)
+canvas.drawEllipse(centreX: 250, centreY: 0, width: 500, height: 500, borderWidth: 30)
+canvas.borderColor = Color.orange
+canvas.fillColor = Color.init(hue: 0, saturation: 0, brightness: 0, alpha: 0)
+canvas.drawEllipse(centreX: 250, centreY: 0, width: 450, height: 450, borderWidth: 30)
+canvas.borderColor = Color.yellow
+canvas.fillColor = Color.init(hue: 0, saturation: 0, brightness: 0, alpha: 0)
+canvas.drawEllipse(centreX: 250, centreY: 0, width: 400, height: 400, borderWidth: 30)
+canvas.borderColor = Color.green
+canvas.fillColor = Color.init(hue: 0, saturation: 0, brightness: 0, alpha: 0)
+canvas.drawEllipse(centreX: 250, centreY: 0, width: 350, height: 350, borderWidth: 30)
+canvas.borderColor = Color.blue
+canvas.fillColor = Color.init(hue: 0, saturation: 0, brightness: 0, alpha: 0)
+canvas.drawEllipse(centreX: 250, centreY: 0, width: 300, height: 300, borderWidth: 30)
+canvas.borderColor = Color.purple
+canvas.fillColor = Color.init(hue: 0, saturation: 0, brightness: 0, alpha: 0)
+canvas.drawEllipse(centreX: 250, centreY: 0, width: 250, height: 250, borderWidth: 30)
 
 
 // Show where the origin is
