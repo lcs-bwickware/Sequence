@@ -27,7 +27,7 @@ let canvas = Canvas(width: 500, height: 500)
 canvas.fillColor = Color.init(hue: 200, saturation: 50, brightness: 100, alpha: 100)
 canvas.drawRectangle(centreX: 0, centreY: 0, width: 1000, height: 1200)
 
-// Sun rays
+// Sun rays Yellow
 canvas.lineColor = Color.yellow
 canvas.defaultLineWidth=5
 canvas.drawLine(fromX: 0, fromY: 500, toX: 100, toY: 0)
@@ -35,22 +35,33 @@ canvas.drawLine(fromX: 0, fromY: 500, toX: 300, toY: 0)
 canvas.drawLine(fromX: 0, fromY: 500, toX: 600, toY: 0)
 canvas.drawLine(fromX: 0, fromY: 500, toX: 600, toY: 400)
 canvas.drawLine(fromX: 0, fromY: 500, toX: 600, toY: 200)
-// Sun rays in orange
-canvas.lineColor = Color.orange
 canvas.drawLine(fromX: 0, fromY: 500, toX: 0, toY: 0)
 canvas.drawLine(fromX: 0, fromY: 500, toX: 200, toY: 0)
 canvas.drawLine(fromX: 0, fromY: 500, toX: 450, toY: 0)
 canvas.drawLine(fromX: 0, fromY: 500, toX: 600, toY: 500)
 canvas.drawLine(fromX: 0, fromY: 500, toX: 600, toY: 300)
 canvas.drawLine(fromX: 0, fromY: 500, toX: 600, toY: 100)
+// Sun rays in Orange
+canvas.lineColor = Color.orange
+canvas.drawLine(fromX: 0, fromY: 500, toX: 50, toY: 0)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 150, toY: 0)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 250, toY: 0)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 375, toY: 0)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 525, toY: 0)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 600, toY: 550)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 600, toY: 450)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 600, toY: 350)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 600, toY: 250)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 600, toY: 150)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 600, toY: 50)
 canvas.fillColor = Color.yellow
 canvas.borderColor = Color.yellow
 canvas.drawEllipse(centreX: 0, centreY: 500, width: 140, height: 140, borderWidth: 4)
 // Make the cloud
 canvas.fillColor = Color.white
 canvas.borderColor = Color.white
-canvas.drawEllipse(centreX: 460, centreY: 490, width: 100, height: 100, borderWidth: 0)
-canvas.drawEllipse(centreX: 470, centreY: 430, width: 100, height: 100, borderWidth: 0)
+canvas.drawEllipse(centreX: 450, centreY: 500, width: 150, height: 150, borderWidth: 0)
+canvas.drawEllipse(centreX: 500, centreY: 450, width: 150, height: 150, borderWidth: 0)
 // draw rainbow (red)
 canvas.defaultBorderWidth = 30
 canvas.borderColor = Color.red
