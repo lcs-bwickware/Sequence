@@ -1,21 +1,3 @@
-/*:
- 
- # playground
- 
- *noun*: a place where people can play
- 
- ##
- 
- Use this playground to experiment with the Canvas class.
- 
- Your goals are to:
- 
- * learn something about order of statements (does order matter?)
- * get familiar with using a Playground
- 
- Have fun!
- 
- */
 // These are some required statements to make this playground work.
 import Cocoa
 import PlaygroundSupport
@@ -95,3 +77,4 @@ canvas.drawEllipse(centreX: 250, centreY: 0, width: 250, height: 250, borderWidt
 
 // This code is necessary to see the result in the Assistant Editor at right
 PlaygroundPage.current.liveView = canvas.imageView
+
