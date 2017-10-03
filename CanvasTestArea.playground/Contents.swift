@@ -66,18 +66,23 @@ canvas.drawEllipse(centreX: 500, centreY: 450, width: 150, height: 150, borderWi
 canvas.defaultBorderWidth = 30
 canvas.borderColor = Color.red
 canvas.fillColor = Color.init(hue: 0, saturation: 0, brightness: 0, alpha: 0)
+// draw rainbow (orange)
 canvas.drawEllipse(centreX: 250, centreY: 0, width: 500, height: 500, borderWidth: 30)
 canvas.borderColor = Color.orange
 canvas.fillColor = Color.init(hue: 0, saturation: 0, brightness: 0, alpha: 0)
+// draw rainbow (yellow)
 canvas.drawEllipse(centreX: 250, centreY: 0, width: 450, height: 450, borderWidth: 30)
 canvas.borderColor = Color.yellow
 canvas.fillColor = Color.init(hue: 0, saturation: 0, brightness: 0, alpha: 0)
+// draw rainbow (green)
 canvas.drawEllipse(centreX: 250, centreY: 0, width: 400, height: 400, borderWidth: 30)
 canvas.borderColor = Color.green
 canvas.fillColor = Color.init(hue: 0, saturation: 0, brightness: 0, alpha: 0)
+// draw rainbow (blue)
 canvas.drawEllipse(centreX: 250, centreY: 0, width: 350, height: 350, borderWidth: 30)
 canvas.borderColor = Color.blue
 canvas.fillColor = Color.init(hue: 0, saturation: 0, brightness: 0, alpha: 0)
+// draw rainbow (purple)
 canvas.drawEllipse(centreX: 250, centreY: 0, width: 300, height: 300, borderWidth: 30)
 canvas.borderColor = Color.purple
 canvas.fillColor = Color.init(hue: 0, saturation: 0, brightness: 0, alpha: 0)
